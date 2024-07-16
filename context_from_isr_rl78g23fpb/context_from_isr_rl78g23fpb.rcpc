@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="e2studio" Version=""/>
+  <Placeholders>
+    <PlaceholderPrefix>${</PlaceholderPrefix>
+    <PlaceholderPostfix>}</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="context_from_isr_rl78g23fpb" Type="Application">
+    <Files>
+      <Category Name="src">
+        <Category Name="FreeRTOS-Kernel">
+          <Path>src\FreeRTOS-Kernel\croutine.c</Path>
+          <Path>src\FreeRTOS-Kernel\event_groups.c</Path>
+          <Path>src\FreeRTOS-Kernel\list.c</Path>
+          <Path>src\FreeRTOS-Kernel\queue.c</Path>
+          <Path>src\FreeRTOS-Kernel\stream_buffer.c</Path>
+          <Path>src\FreeRTOS-Kernel\tasks.c</Path>
+          <Path>src\FreeRTOS-Kernel\timers.c</Path>
+          <Category Name=".github">
+            <Path>src\FreeRTOS-Kernel\.github\lexicon.txt</Path>
+          </Category>
+          <Category Name="include">
+            <Path>src\FreeRTOS-Kernel\include\FreeRTOS.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\StackMacros.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\atomic.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\croutine.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\deprecated_definitions.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\event_groups.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\list.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\message_buffer.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\mpu_prototypes.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\mpu_wrappers.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\portable.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\projdefs.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\queue.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\semphr.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\stack_macros.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\stream_buffer.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\task.h</Path>
+            <Path>src\FreeRTOS-Kernel\include\timers.h</Path>
+          </Category>
+          <Category Name="portable">
+            <Path>src\FreeRTOS-Kernel\portable\readme.txt</Path>
+            <Category Name="MemMang">
+              <Path>src\FreeRTOS-Kernel\portable\MemMang\heap_1.c</Path>
+              <Path>src\FreeRTOS-Kernel\portable\MemMang\heap_2.c</Path>
+              <Path>src\FreeRTOS-Kernel\portable\MemMang\heap_3.c</Path>
+              <Path>src\FreeRTOS-Kernel\portable\MemMang\heap_4.c</Path>
+              <Path>src\FreeRTOS-Kernel\portable\MemMang\heap_5.c</Path>
+            </Category>
+            <Category Name="Renesas">
+              <Category Name="RL78G2x">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\ISR_Support.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\portasm.asm</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\portmacro.h</Path>
+              </Category>
+              <Category Name="RX100">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX100\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX100\port_asm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX100\portmacro.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX100\readme.txt</Path>
+              </Category>
+              <Category Name="RX200">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX200\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX200\port_asm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX200\portmacro.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX200\readme.txt</Path>
+              </Category>
+              <Category Name="RX600">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600\port_asm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600\portmacro.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600\readme.txt</Path>
+              </Category>
+              <Category Name="RX600v2">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port_asm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600v2\portmacro.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX600v2\readme.txt</Path>
+              </Category>
+              <Category Name="RX700v3_DPFPU">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port_asm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\portmacro.h</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\readme.txt</Path>
+              </Category>
+              <Category Name="SH2A_FPU">
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\ISR_Support.inc</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\port.c</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\portasm.src</Path>
+                <Path>src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\portmacro.h</Path>
+              </Category>
+            </Category>
+          </Category>
+        </Category>
+        <Category Name="app">
+          <Path>src\app\main.c</Path>
+          <Category Name="test_src">
+            <Path>src\app\test_src\event_recv_task.c</Path>
+            <Path>src\app\test_src\event_recv_task.h</Path>
+            <Path>src\app\test_src\test_main.c</Path>
+            <Path>src\app\test_src\test_main.h</Path>
+          </Category>
+          <Category Name="uart">
+            <Path>src\app\uart\rl78_serial_term_uart.c</Path>
+            <Path>src\app\uart\rl78_serial_term_uart.h</Path>
+          </Category>
+        </Category>
+        <Category Name="drivers">
+          <Path>src\drivers\rl78_bsp_wrapper.c</Path>
+          <Path>src\drivers\rl78_bsp_wrapper.h</Path>
+          <Category Name="r_byteq">
+            <Path>src\drivers\r_byteq\r_byteq.c</Path>
+            <Path>src\drivers\r_byteq\r_byteq_if.h</Path>
+            <Path>src\drivers\r_byteq\r_byteq_private.h</Path>
+          </Category>
+          <Category Name="r_config">
+            <Path>src\drivers\r_config\r_byteq_config.h</Path>
+            <Path>src\drivers\r_config\r_sci_rl_config.h</Path>
+          </Category>
+          <Category Name="r_sci">
+            <Path>src\drivers\r_sci\r_sci_rl_if.h</Path>
+            <Category Name="src">
+              <Path>src\drivers\r_sci\src\r_sci_rl.c</Path>
+              <Path>src\drivers\r_sci\src\r_sci_rl_platform.h</Path>
+              <Path>src\drivers\r_sci\src\r_sci_rl_private.h</Path>
+              <Category Name="targets">
+                <Category Name="rl78">
+                  <Path>src\drivers\r_sci\src\targets\rl78\r_sci_rl78.c</Path>
+                  <Path>src\drivers\r_sci\src\targets\rl78\r_sci_rl78_data.c</Path>
+                  <Path>src\drivers\r_sci\src\targets\rl78\r_sci_rl78_private.h</Path>
+                </Category>
+              </Category>
+            </Category>
+          </Category>
+        </Category>
+        <Category Name="rtos_skelton">
+          <Category Name="frtos_config">
+            <Path>src\rtos_skelton\frtos_config\FreeRTOSConfig.h</Path>
+          </Category>
+          <Category Name="frtos_skeleton">
+            <Path>src\rtos_skelton\frtos_skeleton\task_function.h</Path>
+          </Category>
+          <Category Name="frtos_startup">
+            <Path>src\rtos_skelton\frtos_startup\freertos_object_init.c</Path>
+            <Path>src\rtos_skelton\frtos_startup\freertos_start.c</Path>
+            <Path>src\rtos_skelton\frtos_startup\freertos_start.h</Path>
+          </Category>
+        </Category>
+        <Category Name="smc_gen">
+          <Category Name="Config_TAU0_1">
+            <Path>src\smc_gen\Config_TAU0_1\Config_TAU0_1.c</Path>
+            <Path>src\smc_gen\Config_TAU0_1\Config_TAU0_1.h</Path>
+            <Path>src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.c</Path>
+          </Category>
+          <Category Name="Config_UART2">
+            <Path>src\smc_gen\Config_UART2\Config_UART2.c</Path>
+            <Path>src\smc_gen\Config_UART2\Config_UART2.h</Path>
+            <Path>src\smc_gen\Config_UART2\Config_UART2_user.c</Path>
+          </Category>
+          <Category Name="general">
+            <Path>src\smc_gen\general\r_cg_macrodriver.h</Path>
+            <Path>src\smc_gen\general\r_cg_sau.h</Path>
+            <Path>src\smc_gen\general\r_cg_sau_common.c</Path>
+            <Path>src\smc_gen\general\r_cg_sau_common.h</Path>
+            <Path>src\smc_gen\general\r_cg_systeminit.c</Path>
+            <Path>src\smc_gen\general\r_cg_tau.h</Path>
+            <Path>src\smc_gen\general\r_cg_tau_common.c</Path>
+            <Path>src\smc_gen\general\r_cg_tau_common.h</Path>
+            <Path>src\smc_gen\general\r_cg_userdefine.h</Path>
+            <Path>src\smc_gen\general\r_smc_entry.h</Path>
+          </Category>
+          <Category Name="r_bsp">
+            <Path>src\smc_gen\r_bsp\platform.h</Path>
+            <Path>src\smc_gen\r_bsp\readme.txt</Path>
+            <Category Name="board">
+              <Category Name="generic_rl78_g23">
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\hdwinit.c</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\hdwinit.h</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp.h</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp_config_reference.h</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp_config_reference_ccrl.inc</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp_config_reference_iccrl.inc</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp_config_reference_llvm.inc</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\r_bsp_init.c</Path>
+                <Path>src\smc_gen\r_bsp\board\generic_rl78_g23\stkinit.asm</Path>
+              </Category>
+            </Category>
+            <Category Name="doc">
+              <Category Name="en">
+                <Path>src\smc_gen\r_bsp\doc\en\r01an5522ej0160-rl78-bsp.pdf</Path>
+              </Category>
+              <Category Name="ja">
+                <Path>src\smc_gen\r_bsp\doc\ja\r01an5522jj0160-rl78-bsp.pdf</Path>
+              </Category>
+            </Category>
+            <Category Name="mcu">
+              <Category Name="all">
+                <Path>src\smc_gen\r_bsp\mcu\all\cstart.asm</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\fsp_common_api.h</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_common.c</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_common.h</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_common_ccrl.asm</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_bsp_rl78_compiler.h</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_fsp_error.h</Path>
+                <Path>src\smc_gen\r_bsp\mcu\all\r_rtos.h</Path>
+              </Category>
+              <Category Name="rl78_g23">
+                <Path>src\smc_gen\r_bsp\mcu\rl78_g23\mcu_clocks.c</Path>
+                <Path>src\smc_gen\r_bsp\mcu\rl78_g23\mcu_clocks.h</Path>
+                <Path>src\smc_gen\r_bsp\mcu\rl78_g23\mcu_info.h</Path>
+                <Category Name="register_access">
+                  <Category Name="ccrl">
+                    <Path>src\smc_gen\r_bsp\mcu\rl78_g23\register_access\ccrl\iodefine.h</Path>
+                  </Category>
+                </Category>
+              </Category>
+            </Category>
+          </Category>
+          <Category Name="r_config">
+            <Path>src\smc_gen\r_config\r_bsp_config.h</Path>
+            <Path>src\smc_gen\r_config\r_bsp_config.inc</Path>
+          </Category>
+          <Category Name="r_pincfg">
+            <Path>src\smc_gen\r_pincfg\Pin.c</Path>
+            <Path>src\smc_gen\r_pincfg\Pin.h</Path>
+          </Category>
+        </Category>
+      </Category>
+    </Files>
+    <Device Category="com.renesas.cdt.managedbuild.renesas.ccrl.common.option.cpu.s3" Series="RL78">R7F100GSNxFB</Device>
+    <BuildOptions Name="CC-RL" Version="v1.12.01">
+      <BuildMode Active="True" Name="HardwareDebug">
+        <GeneralOptions/>
+        <CompileOptions>
+          <Option>-cpu=S3</Option>
+          <Option>-c</Option>
+          <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+          <Option>-I "${ProjDirPath}\src\app"</Option>
+          <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+          <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+          <Option>-I "${ProjDirPath}\src\drivers"</Option>
+          <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+          <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+          <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+          <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+          <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+          <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+          <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+          <Option>-character_set=utf8</Option>
+          <Option>-g</Option>
+          <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+          <Option>-far_rom</Option>
+          <Option>-Onothing</Option>
+          <Option>-lang=c99</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-cpu=S3</Option>
+          <Option>-c</Option>
+          <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+          <Option>-character_set=utf8</Option>
+          <Option>-g</Option>
+          <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+        </AssembleOptions>
+        <SmsAssembleOptions>
+          <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+          <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+          <Option>-o "${CWD}"</Option>
+          <Option>-character_set=utf8</Option>
+        </SmsAssembleOptions>
+        <LinkOptions>
+          <Option>-device="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+          <Option>-list</Option>
+          <Option>-show=symbol,reference,xreference,total_size,vector,struct,relocation_attribute</Option>
+          <Option>-nooptimize</Option>
+          <Option>-entry=_start</Option>
+          <Option>-auto_section_layout</Option>
+          <Option>-security_id=00000000000000000000</Option>
+          <Option>-debug_monitor=BFE00-BFFFF</Option>
+          <Option>-user_opt_byte=EF3AE8</Option>
+          <Option>-ocdbg=84</Option>
+          <Option>-ocdtr</Option>
+          <Option>-subcommand="LinkerSubCommand.tmp"</Option>
+          <Option>-output="context_from_isr_rl78g23fpb.abs"</Option>
+          <Option>-debug</Option>
+          <Option>-nocompress</Option>
+          <Option>-rom=.data=.dataR,.sdata=.sdataR</Option>
+          <Option>-nomessage</Option>
+          <Option>-nologo</Option>
+          <Option>-library="C:\Program Files (x86)\Renesas\RL78\1_12_1\lib\rl78em4s99.lib"</Option>
+          <Option>-library="C:\Program Files (x86)\Renesas\RL78\1_12_1\lib\rl78em4r.lib"</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <GenerateMode>BuildAlways</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel/portable/Renesas/RL78G2x\portasm.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/board/generic_rl78_g23\stkinit.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/mcu/all\cstart.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/mcu/all\r_bsp_common_ccrl.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\croutine.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\event_groups.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\list.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel/portable/MemMang\heap_4.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel/portable/Renesas/RL78G2x\port.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\queue.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\stream_buffer.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\tasks.obj</Path>
+          <Path>HardwareDebug\src/FreeRTOS-Kernel\timers.obj</Path>
+          <Path>HardwareDebug\src/app\main.obj</Path>
+          <Path>HardwareDebug\src/app/test_src\event_recv_task.obj</Path>
+          <Path>HardwareDebug\src/app/test_src\test_main.obj</Path>
+          <Path>HardwareDebug\src/app/uart\rl78_serial_term_uart.obj</Path>
+          <Path>HardwareDebug\src/drivers/r_byteq\r_byteq.obj</Path>
+          <Path>HardwareDebug\src/drivers/r_sci/src\r_sci_rl.obj</Path>
+          <Path>HardwareDebug\src/drivers/r_sci/src/targets/rl78\r_sci_rl78.obj</Path>
+          <Path>HardwareDebug\src/drivers/r_sci/src/targets/rl78\r_sci_rl78_data.obj</Path>
+          <Path>HardwareDebug\src/drivers\rl78_bsp_wrapper.obj</Path>
+          <Path>HardwareDebug\src/rtos_skelton/frtos_startup\freertos_object_init.obj</Path>
+          <Path>HardwareDebug\src/rtos_skelton/frtos_startup\freertos_start.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/Config_TAU0_1\Config_TAU0_1.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/Config_TAU0_1\Config_TAU0_1_user.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/Config_UART2\Config_UART2.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/Config_UART2\Config_UART2_user.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/general\r_cg_sau_common.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/general\r_cg_systeminit.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/general\r_cg_tau_common.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/board/generic_rl78_g23\hdwinit.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/board/generic_rl78_g23\r_bsp_init.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_bsp/mcu/rl78_g23\mcu_clocks.obj</Path>
+          <Path>HardwareDebug\src/smc_gen/r_pincfg\Pin.obj</Path>
+        </LinkOrder>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\MemMang\heap_1.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\MemMang\heap_2.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\MemMang\heap_3.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\MemMang\heap_5.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX100\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX100\port_asm.src"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX200\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX200\port_asm.src"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX600\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX600\port_asm.src"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port_asm.src"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port_asm.src"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\port.c"/>
+        <NoTargetFile Target="src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\portasm.src"/>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX100\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX100\port_asm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX200\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX200\port_asm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX600\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX600\port_asm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX600v2\port_asm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RX700v3_DPFPU\port_asm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\SH2A_FPU\portasm.src">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\port.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\Renesas\RL78G2x\portasm.asm">
+          <AssembleOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-g</Option>
+            <Option>-o "${ProjDirPath}/${ConfigName}"</Option>
+          </AssembleOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\MemMang\heap_1.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\MemMang\heap_2.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\MemMang\heap_3.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\MemMang\heap_4.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <IndividualOptions Target="src\FreeRTOS-Kernel\portable\MemMang\heap_5.c">
+          <CompileOptions>
+            <Option>-cpu=S3</Option>
+            <Option>-c</Option>
+            <Option>-dev="C:/Users/a5124249/.eclipse/com.renesas.platform_518996270/DebugComp/RL78/RL78/Common/DR7F100GSN.DVF"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_bsp"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\general"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_UART2"</Option>
+            <Option>-I "${ProjDirPath}\src\app"</Option>
+            <Option>-I "${ProjDirPath}\src\app\uart"</Option>
+            <Option>-I "${ProjDirPath}\src\app\test_src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_config"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_byteq"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src\targets"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci\src"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers\r_sci"</Option>
+            <Option>-I "${ProjDirPath}\src\drivers"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\include"</Option>
+            <Option>-I "${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_config"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton\frtos_startup"</Option>
+            <Option>-I "${ProjDirPath}\src\rtos_skelton"</Option>
+            <Option>-I "${ProjDirPath}\src\smc_gen\Config_TAU0_1"</Option>
+            <Option>-D TEST_DO_CORRECT_KERNEL_CODE=0</Option>
+            <Option>-character_set=utf8</Option>
+            <Option>-lang=c99</Option>
+            <Option>-g</Option>
+            <Option>-o ${workspace_loc}\${ProjName}/${ConfigName}</Option>
+            <Option>-far_rom</Option>
+            <Option>-Onothing</Option>
+          </CompileOptions>
+        </IndividualOptions>
+        <CommonOptions>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_bsp"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_pincfg"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\general"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_config"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_UART2"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\app"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\app\uart"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\app\test_src"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_config"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_sci\src\targets\rl78"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_byteq"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_sci\src\targets"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_sci\src"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers\r_sci"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\drivers"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\FreeRTOS-Kernel\include"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\FreeRTOS-Kernel\portable\Renesas\RL78G2x"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\rtos_skelton\frtos_skeleton"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\rtos_skelton\frtos_config"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\rtos_skelton\frtos_startup"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\rtos_skelton"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_TAU0_1"</IncludePathForC>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_bsp"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_pincfg"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\general"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_config"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_UART2"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_TAU0_1"</IncludePathForAsm>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\r_bsp"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\r_pincfg"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\general"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\r_config"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\Config_UART2"</IncludePathForSms>
+          <IncludePathForSms>"${ProjDirPath}\src\smc_gen\Config_TAU0_1"</IncludePathForSms>
+          <MacroForC>TEST_DO_CORRECT_KERNEL_CODE=0</MacroForC>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>
